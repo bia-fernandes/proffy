@@ -31,11 +31,18 @@
 
 /* todo elemento no css, ex: body, é uma box e tem propriedades de box */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
 body{
     height: 100vh;
 }
 
-html,
 body {
 
     background: var(--color-background);
@@ -48,7 +55,6 @@ body,
 input,
 button,
 textarea {
-    /* font: 500 1.6rem Poppins; */
     font-weight: 500;
     font-family: Poppins;
     font-size: 1.6rem;
@@ -59,3 +65,9 @@ textarea {
     width: 90vw;
     max-width:700px;
 }
+
+@media(min-width: 700px){
+    :root {
+        font-size: 62.5%; /* todo 1rem vai ser relativo a 10px (62.5% de 16px)*/ 
+    }
+)
